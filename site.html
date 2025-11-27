@@ -303,10 +303,10 @@
             });
         });
 
-        document.querySelector('nav').forEach((nav) => {
+        document.querySelectorAll('nav').forEach((nav) => {
             nav.style.opacity = 0;
-            nav.style.transform = 'translateX("30px")';
-            nav.style.transition = 'all 0,8s ease-out';
+            nav.style.transform = 'translateX(30px)';
+            nav.style.transition = 'all 2s ease-out';
             observer.observe(nav);
         });
 
