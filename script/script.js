@@ -1,64 +1,49 @@
-//Variables
-const reponse = await fetch('./ressources/projet.json');
-const projets = await reponse.json();
-console.log(projets);
+// Variables
+let projets = [];
+
+// Fonction pour charger les projets
+export async function initProjets() {
+    const reponse = await fetch('./ressources/projet.json');
+    projets = await reponse.json();
+    console.log(projets);
+    return projets;
+}
 
 
-createEveryProjects(projets);
 
-//Boutons de tri
-const boutonTrierJava = document.querySelector(".trijava");
-const boutonTrierTout = document.querySelector(".tout");
-const boutonTrierWeb = document.querySelector(".web");
-const boutonTrierMVC = document.querySelector(".mvc");
-const boutonTrierReseaux = document.querySelector(".Reseaux");
-
-
-boutonTrierJava.addEventListener("click", function(){
-    const projetfiltrer = projets.filter((p)=> p.tag.includes("Java"));
-    console.log("Projet filtrer");
-    console.log(projetfiltrer);
-    createEveryProjects(projetfiltrer);
-})
-
-boutonTrierTout.addEventListener("click", function(){
-    createEveryProjects(projets);
-})
-
-boutonTrierWeb.addEventListener("click", function(){
-    const projetfiltrer = projets.filter((p)=> p.tag.includes("Html") || p.tag.includes("Css"));
-    console.log("Projet filtrer");
-    console.log(projetfiltrer);
-    createEveryProjects(projetfiltrer);
-})
-
-boutonTrierMVC.addEventListener("click", function(){
-    const projetfiltrer = projets.filter((p)=> p.tag.includes("Architecture MVC"));
-    console.log("Projet filtrer");
-    console.log(projetfiltrer);
-    createEveryProjects(projetfiltrer);
-})
-
-boutonTrierReseaux.addEventListener("click", function(){
-    const projetfiltrer = projets.filter((p)=> p.tag.includes("Reseaux"));
-    console.log("Projet filtrer");
-    console.log(projetfiltrer);
-    createEveryProjects(projetfiltrer);
-})
-
-
+const filterButtons = document.querySelectorAll('.btn-tri');
 //Fonctions
-function createEveryProjects(data){
+export function actionTriButton(max) {
+    filterButtons.forEach(bouton => {
+        bouton.addEventListener("click", function () {
+            reinitBoutonActif();
+            const filtre = this.dataset.filter;
+            this.classList.add("actif");
+            if (filtre === "Tout") {
+                createEveryProjects(projets.slice(0, max));
+            } else {
+                const projetfiltrer = projets.filter((p) => p.tag.includes(filtre));
+                createEveryProjects(projetfiltrer);
+            }
+        });
+    });
+}
+
+export function reinitBoutonActif(){
+    filterButtons.forEach(bouton=>{
+        bouton.classList.remove("actif");
+    })
+}
+
+export function createEveryProjects(data){
     let html = "";
     data.forEach(element => {
     html += createProject(element);
     });
     document.querySelector('.project-grid').innerHTML = html;
-
-
 }
 
-function createProject({titre, desc, tag, lien}){
+export function createProject({titre, desc, tag, lien}){
     let tagHTML = "";
     tag.forEach((element) => tagHTML +=`<span class="tag">${element}</span>`);
 

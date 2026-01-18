@@ -1,175 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projets | Alex Marescaux</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="project.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="project.css" />
+    <script type="module" src="script/script.js" defer></script>
+    <script type="module" src="script/projet.js" defer></script>
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="site.html">← Retour au CV Développeur</a>
-            <span class="navbar-text">
-                Projets & Réalisations
-            </span>
+            <span class="navbar-text"> Projets & Réalisations </span>
         </div>
     </nav>
 
     <!-- PROJETS -->
-    <section id="projects" style="background: var(--bg-white);">
+    <section id="projects" style="background: var(--bg-white)">
         <div class="container">
             <h2>Projets Informatiques</h2>
-            <p style="margin-bottom: 40px;">Une sélection de projets réalisés dans le cadre académique et personnel.</p>
-
-            <div class="project-grid">
-                <article class="card">
-                    <div><img style="max-width: 100%; margin-bottom: 30px; border-radius: 20px;" src="img/encours.png"
-                            alt="fifa"></div>
-                    <div>
-                        <h3>Plateforme Universitaire</h3>
-                        <p>Application desktop Java/JavaFX permettant l'échange de ressources entre étudiants.</p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">JavaFX</span>
-                        <span class="tag">Architecture MVC</span>
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://github.com/AlexMrsx/SejourLinguistique">Lien GitHub</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div><img style="max-width: 100%; margin-bottom: 30px; border-radius: 20px;" src="img/encours.png"
-                            alt="fifa"></div>
-                    <div>
-                        <h3>Jeu de labyrinthe</h3>
-                        <p>Jeu de réalisation de labyrtinthe avec Interface Graphique. Algo de génération de labyrtinhe
-                            parfait & aléatoire</p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">JavaFX</span>
-                        <span class="tag">Architecture MVC</span>
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://github.com/AlexMrsx/Labyrinthe">Lien GitHub</a>
-                    </div>
-                </article>
-
-
-
-                <article class="card">
-                    <div><img style="max-width: 100%; margin-bottom: 30px; border-radius: 20px;" src="img/encours.png"
-                            alt="fifa"></div>
-
-                    <div>
-                        <h3>Mini PAINT</h3>
-                        <p>Développement d'un mini logiciel type "Paint" pour apprendre le MVC</p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Java </span>
-                        <span class="tag">JavaFX</span>
-                        <span class="tag">Architecture MVC</span>
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://github.com/AlexMrsx/Paint_MVC">Lien GitHub</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div><img style="max-width: 100%; margin-bottom: 30px; border-radius: 20px;" src="img/encours.png"
-                            alt="fifa"></div>
-
-                    <div>
-                        <h3>Jeu Ludo-pédagogique</h3>
-                        <p>Conception d'un jeu éducatif axé sur l'apprentissage par le jeu.</p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Programmation Objet</span>
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://github.com/AlexMrsx/Mauscape">Lien GitHub</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div><img style="max-width: 100%; margin-bottom: 30px; border-radius: 20px;" src="img/encours.png"
-                            alt="fifa"></div>
-
-                    <div>
-                        <h3>Jeu Monopoly</h3>
-                        <p>Reproduction du jeu de société en équipe, gestion de projet via la méthode Agile.</p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Scrum/Agile</span>
-                        <span class="tag">Travail d'équipe</span>
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://github.com/AlexMrsx/Infopoly">Lien GitHub</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div><img style="max-width: 100%; margin-bottom: 30px; border-radius: 20px;" src="img/encours.png"
-                            alt="fifa"></div>
-
-                    <div>
-                        <h3>Azertype</h3>
-                        <p>Une mini app web créer durant mon apprentissage du JavaScript sur OpenClassRoom</p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Html</span>
-                        <span class="tag">Css</span>
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://github.com/AlexMrsx/AzerType">Lien GitHub</a>
-                        <a target="_blank" class="linkApp" href="https://alexmrsx.github.io/AzerType/">Voir l'app</a>
-                    </div>
-                </article>
-
-                <article style="background-color: lightcyan;  max-height: 70%;" class="card ">
-                    <div><img style="max-width: 100%; margin-bottom: 30px; border-radius: 20px;" src="img/encours.png"
-                            alt="fifa"></div>
-
-                    <div>
-                        <h3>Déploiement d'application (en-cours)</h3>
-                        <p>Mise en production de deux applications web, implémentant le standard
-                            Matrix
-                        <ul style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
-                            <li><strong>Back</strong>: serveur Synapse et base de données postgresql</li>
-                            <li><strong>Front</strong>: Element Web: site statique javascript</li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Linux Administration</span>
-                        <span class="tag">Virtualisation</span>
-                        <span class="tag">Nginx Reverse Proxy</span>
-                        <span class="tag">PostgreSQL </span>
-                        <span class="tag">Systemd Services</span>
-
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="">Lien vers le rendu (pas encore disponible )</a>
-                    </div>
-                </article>
+            <p style="margin-bottom: 40px">
+                Une sélection de projets réalisés dans le cadre académique et
+                personnel.
+            </p>
+            <div class="filter-buttons">
+                <button class="btn-tri" data-filter="Tout">
+                    Tout type de projet
+                </button>
+                <button class="btn-tri" data-filter="Java">Java</button>
+                <button class="btn-tri" data-filter="Html">Web</button>
+                <button class="btn-tri" data-filter="Architecture MVC">MVC</button>
+                <button class="btn-tri" data-filter="Reseaux">Reseaux</button>
             </div>
+            <div class="project-grid"></div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

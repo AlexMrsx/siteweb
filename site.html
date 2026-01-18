@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script  type="module" src="script/script.js" defer></script>
+    <script  type="module" src="script/site.js" defer></script>
+
 </head>
 
 <body>
@@ -124,11 +126,11 @@
             
             <p style="margin-bottom: 40px;">Une sélection de projets réalisés dans le cadre académique et personnel.</p>
             <div class="filter-buttons">
-                <button class="btn-tri tout">Tout type de projet</button>
-                <button class="btn-tri trijava">Java</button>
-                <button class="btn-tri web">Css / Html</button>
-                <button class="btn-tri mvc">MVC</button>
-                <button class="btn-tri Reseaux">Reseaux</button>
+                <button class="btn-tri"  data-filter="Tout">Tout type de projet</button>
+                <button class="btn-tri" data-filter="Java">Java</button>
+                <button class="btn-tri"  data-filter="Html">Web</button>
+                <button class="btn-tri" data-filter="Architecture MVC">MVC</button>
+                <button class="btn-tri" data-filter="Reseaux">Reseaux</button>
 
             </div>
             <div class="project-grid">
@@ -136,7 +138,7 @@
                 
             </div>
                 <div style="text-align: center; margin-top: 30px; border-radius: 10px; cursor: pointer;">
-                    <a href="travaux.html" class="btn-primary" style="padding: 12px 30px; font-size: 1rem;">Voir
+                    <a href="projects.html" class="btn-primary" style="padding: 12px 30px; font-size: 1rem;">Voir
                         plus de projets...</a>
                 </div>
         </div>

@@ -441,6 +441,13 @@
     background-color: #ccc;
 }
 
+/* AJOUTEZ cette règle plus spécifique */
+.filter-buttons .btn-tri.actif {
+    background-color: var(--primary); /* ou red si vous voulez */
+    color: white;
+    border-color: var(--primary);
+}
+
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .hero-grid { grid-template-columns: 1fr; text-align: center; }
