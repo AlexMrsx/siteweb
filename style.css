@@ -432,3 +432,31 @@
     
 
 }
+
+/* filter-buttons-simple.css */
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons .btn-tri {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #222;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.filter-buttons .btn-tri:hover {
+    background-color: #ddd;
+}
+
+.filter-buttons .btn-tri:active {
+    background-color: #ccc;
+}

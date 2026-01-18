@@ -1,0 +1,60 @@
+[
+    {
+        "titre" : "Plateforme Universitaire",
+        "desc" : "Application desktop Java/JavaFX permettant l'échange de ressources entre étudiants.",
+        "tag" : [
+            "Java", "JavaFX", "Architecture MVC"
+        ], 
+        "lien" : "https://github.com/AlexMrsx/SejourLinguistique"
+    },
+    {
+        "titre" : "Jeu de labyrinthe",
+        "desc" : "Développement d'un mini logiciel type 'Paint' pour apprendre le MVC",
+        "tag" : [
+            "Java", "JavaFX", "Architecture MVC"
+        ], 
+        "lien" : "https://github.com/AlexMrsx/Labyrinthe"
+    },
+    {
+        "titre" : "Mini Paint",
+        "desc" : "Jeu de réalisation de labyrtinthe avec Interface Graphique. Algo de génération de labyrtinhe parfait & aléatoire",
+        "tag" : [
+            "Java", "JavaFX", "Architecture MVC"
+        ], 
+        "lien" : "https://github.com/AlexMrsx/Paint_MVC"
+    },
+    {
+        "titre" : "Jeu Monopoly",
+        "desc" : "Reproduction du jeu de société en équipe, gestion de projet via la méthode Agile.",
+        "tag" : [
+            "Java", "Scrum/Agile", "Travail d'équipe"
+        ], 
+        "lien" : "https://github.com/AlexMrsx/Infopoly"
+    },
+    {
+        "titre" : "Azertype",
+        "desc" : "Une mini app web créer durant mon apprentissage du JavaScript sur OpenClassRoom",
+        "tag" : [
+            "JavaScript", "Html", "CSS"
+        ], 
+        "lien" : "https://github.com/AlexMrsx/AzerType"
+    },
+    {
+        "titre" : "Jeu Ludo-pédagogique",
+        "desc" : "Conception d'un jeu éducatif axé sur l'apprentissage par le jeu.",
+        "tag" : [
+            "Java", "Programmation Objet"
+        ], 
+        "lien" : "https://github.com/AlexMrsx/Mauscape"
+    },
+    {
+        "titre" : "Déploiement d'application",
+        "desc" : "Mise en production de deux applications web, implémentant le standard Matrix. Serveur Synapse, Base de données Postgresql et pour le front, Element Web ",
+        "tag" : [
+            "Linux Adminiastration", "Virtualisation", "Nginx Reverse Proxy", "PostgreSQL", "Systemd Services", "Reseaux"
+        ], 
+        "lien" : "https://gitlab.univ-lille.fr/etu/2025-2026/s303/h-calesse-marescaux-deflou"
+    }
+
+
+]

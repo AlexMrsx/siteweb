@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <script  type="module" src="script/script.js" defer></script>
 </head>
 
 <body>
@@ -85,6 +86,8 @@
                 </div>
                 <div class="en-cours">React
                 </div>
+                <div class="en-cours">Dev Mobile ( Android )
+                </div>
                 <div style="opacity: 0.30;" class="en-cours">A suivre...
                 </div>
 
@@ -118,151 +121,24 @@
     <section id="projects" style="background: var(--bg-white);">
         <div class="container">
             <h2>Projets Informatiques</h2>
+            
             <p style="margin-bottom: 40px;">Une sélection de projets réalisés dans le cadre académique et personnel.</p>
+            <div class="filter-buttons">
+                <button class="btn-tri tout">Tout type de projet</button>
+                <button class="btn-tri trijava">Java</button>
+                <button class="btn-tri web">Css / Html</button>
+                <button class="btn-tri mvc">MVC</button>
+                <button class="btn-tri Reseaux">Reseaux</button>
 
-            <div class="project-grid">
-                <article class="card">
-                    <div>
-                        <h3>Plateforme Universitaire</h3>
-                        <p>Application desktop Java/JavaFX permettant l'échange de ressources entre étudiants.</p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">JavaFX</span>
-                        <span class="tag">Architecture MVC</span>
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://github.com/AlexMrsx/SejourLinguistique">Lien GitHub</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div>
-                        <h3>Jeu de labyrinthe</h3>
-                        <p>Jeu de réalisation de labyrtinthe avec Interface Graphique. Algo de génération de labyrtinhe
-                            parfait & aléatoire</p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">JavaFX</span>
-                        <span class="tag">Architecture MVC</span>
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://github.com/AlexMrsx/Labyrinthe">Lien GitHub</a>
-                    </div>
-                </article>
-
-
-
-                <article class="card">
-                    <div>
-                        <h3>Mini PAINT</h3>
-                        <p>Développement d'un mini logiciel type "Paint" pour apprendre le MVC</p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Java </span>
-                        <span class="tag">JavaFX</span>
-                        <span class="tag">Architecture MVC</span>
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://github.com/AlexMrsx/Paint_MVC">Lien GitHub</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div>
-                        <h3>Jeu Ludo-pédagogique</h3>
-                        <p>Conception d'un jeu éducatif axé sur l'apprentissage par le jeu.</p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Programmation Objet</span>
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://github.com/AlexMrsx/Mauscape">Lien GitHub</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div>
-                        <h3>Jeu Monopoly</h3>
-                        <p>Reproduction du jeu de société en équipe, gestion de projet via la méthode Agile.</p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Java</span>
-                        <span class="tag">Scrum/Agile</span>
-                        <span class="tag">Travail d'équipe</span>
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://github.com/AlexMrsx/Infopoly">Lien GitHub</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div>
-                        <h3>Azertype</h3>
-                        <p>Une mini app web créer durant mon apprentissage du JavaScript sur OpenClassRoom</p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Html</span>
-                        <span class="tag">Css</span>
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://github.com/AlexMrsx/AzerType">Lien GitHub</a>
-                        <a target="_blank" class="linkApp" href="https://alexmrsx.github.io/AzerType/">Voir l'app</a>
-                    </div>
-                </article>
-
-                <article style="" class="card">
-                    <div>
-                        <h3>Déploiement d'application</h3>
-                        <p>Mise en production de deux applications web, implémentant le standard
-                            Matrix
-                        <ul style="display: flex; flex-direction: column; gap: 10px; margin-top: 10px;">
-                            <li><strong>Back</strong>: serveur Synapse et base de données postgresql</li>
-                            <li><strong>Front</strong>: Element Web: site statique javascript</li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="tags">
-                        <span class="tag">Linux Administration</span>
-                        <span class="tag">Virtualisation</span>
-                        <span class="tag">Nginx Reverse Proxy</span>
-                        <span class="tag">PostgreSQL </span>
-                        <span class="tag">Systemd Services</span>
-
-                    </div>
-                    <div class="link-project">
-                        <a target="_blank" href="https://gitlab.univ-lille.fr/etu/2025-2026/s303/h-calesse-marescaux-deflou">Lien vers le rendu </a>
-                    </div>
-                </article>
-                <article
-                    style="background: linear-gradient(135deg, #2563eb 0%, #006aeb 100%); opacity: 50%; display: flex; align-items: center; justify-content: center; min-height: 200px; position: relative;"
-                    class="card">
-                    <h1
-                        style="position: absolute; left: 50%; transform: translateX(-50%); top: 20px; margin: 0; color: white; font-size: 1.2em; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
-                        Tous les Projets</h1>
-
-                    <a href="/travaux.html" target="_blank" style="
-         background: white;
-         color: #006aeb;
-         border: none;
-         padding: 15px 40px;
-         font-size: 1.1em;
-         font-weight: bold;
-         border-radius: 50px;
-         cursor: pointer;
-         box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-         text-decoration: none;
-         transition: all 0.3s ease;
-         transform: translateY(0);
-       " onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 40px rgba(0,0,0,0.4)';"
-                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 30px rgba(0,0,0,0.3)';">
-                        Voir Portfolio →
-                    </a>
-                </article>
             </div>
+            <div class="project-grid">
+                 
+                
+            </div>
+                <div style="text-align: center; margin-top: 30px; border-radius: 10px; cursor: pointer;">
+                    <a href="travaux.html" class="btn-primary" style="padding: 12px 30px; font-size: 1rem;">Voir
+                        plus de projets...</a>
+                </div>
         </div>
     </section>
 
