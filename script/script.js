@@ -12,6 +12,7 @@ export async function initProjets() {
 
 
 const filterButtons = document.querySelectorAll('.btn-tri');
+filterButtons[0].classList.add("actif");
 //Fonctions
 export function actionTriButton(max) {
     filterButtons.forEach(bouton => {
@@ -65,6 +66,8 @@ export function createProject({titre, desc, tag, lien}){
     `;
 
     return html;
-}   
+} 
+
+
 
 

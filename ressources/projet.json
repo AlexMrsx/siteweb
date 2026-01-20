@@ -5,7 +5,8 @@
         "tag" : [
             "Java", "JavaFX", "Architecture MVC"
         ], 
-        "lien" : "https://github.com/AlexMrsx/SejourLinguistique"
+        "lien" : "https://github.com/AlexMrsx/SejourLinguistique",
+        "img" : "../img/projetuniv.jpeg"
     },
     {
         "titre" : "Jeu de labyrinthe",
@@ -54,7 +55,17 @@
             "Linux Adminiastration", "Virtualisation", "Nginx Reverse Proxy", "PostgreSQL", "Systemd Services", "Reseaux"
         ], 
         "lien" : "https://gitlab.univ-lille.fr/etu/2025-2026/s303/h-calesse-marescaux-deflou"
+    },
+    {
+        "titre" : "Ce site Web Portfolio",
+        "desc" : "Mon site perso qui me sert de CV et Portfolio numérique",
+        "tag" : [
+           "CSS","Html", "Json", "JavaScript"
+        ], 
+        "lien" : "https://github.com/AlexMrsx/siteweb"
     }
+
+
 
 
 ]
