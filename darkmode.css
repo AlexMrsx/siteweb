@@ -1,0 +1,18 @@
+/* Dark Mode */        @media (prefers-color-scheme: dark) {
+            :root.dark {
+                 --primary: #000000; /* Vert émeraude professionnel */
+                --primary-dark: #ffffff;
+                --bg-body: #121212; /* Gris très foncé */
+                --bg-white: #1e1e1e; /* Gris foncé */      
+                --text-main: #e0e0e0; /* Gris clair */
+                --text-muted: #9ca3af; /* Gris moyen clair */
+                --border: #374151; /* Gris foncé moyen */
+                --shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.3), 0 2px 4px -1px rgba(255, 255, 255, 0.2);
+                --textform: #ffffff;
+            }
+        }
+
+
+
+
+

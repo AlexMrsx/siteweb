@@ -1,5 +1,13 @@
 [
     {
+        "titre" : "Capitalum ( Projet Perso )",
+        "desc" : "Site Web de calcul d'intêret composés pour vos investissements !",
+        "tag" : [
+            "Html", "CSS", "JavaScript", "Bootstrap", "Charts.Js"
+        ], 
+        "lien" : "https://alexmrsx.github.io/Caputalum/"
+    },
+    {
         "titre" : "Plateforme Universitaire",
         "desc" : "Application desktop Java/JavaFX permettant l'échange de ressources entre étudiants.",
         "tag" : [
