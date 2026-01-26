@@ -1,286 +1,349 @@
-<!DOCTYPE html>
-<html lang="fr" data-theme="dark" >
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="gsp-lHLpaW_jTcCECtPyMGqbeY3_lQoALWaxotmmqtg" />
+<!doctype html>
+<html lang="fr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="gsp-lHLpaW_jTcCECtPyMGqbeY3_lQoALWaxotmmqtg"
+    />
     <title>Alex Marescaux | Portfolio</title>
     <title>Alex Marescaux - Portfolio Développeur BUT Informatique</title>
-    <meta name="description"
-        content="Étudiant 2e année BUT Informatique IUT Lille. Projets JavaFX, Matrix, React. Stagiaire dev dès avril 2026.">
-    <meta name="keywords" content="Alex Marescaux, portfolio développeur, BUT Informatique, Java, JavaScript">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="darkmode.css">
-    <script  type="module" src="script/script.js" defer></script>
-    <script  type="module" src="script/site.js" defer></script>
+    <meta
+      name="description"
+      content="Étudiant 2e année BUT Informatique IUT Lille. Projets JavaFX, Matrix, React. Stagiaire dev dès avril 2026."
+    />
+    <meta
+      name="keywords"
+      content="Alex Marescaux, portfolio développeur, BUT Informatique, Java, JavaScript"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="darkmode.css" />
+    <script type="module" src="script/script.js" defer></script>
+    <script type="module" src="script/site.js" defer></script>
     <script src="script/dark-mode.js" defer></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <nav>
-        <div class="container nav-content">
-            <a href="#" class="logo">Alex Marescaux<span style="color:var(--primary)">.</span></a>
-            <button class="nav-toggle" aria-label="Open navigation menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="nav-links">
-                <a class="n" href="#about">Compétences</a>
-                <a class="n" href="#projects">Réalisations</a>
-                <a class="n" href="#parcours">Parcours</a>
-                <a class="n" href="#contact">Contact</a>
-                <a class="n" href="doc/CV_Alex_Marescaux.pdf" download="doc/CV_Alex_Marescaux.pdf">CV</a>
-                <a class="n" href="minia.html"><strong>Mon entreprise</strong> </a>
-            </div>
-                <button class="darkmode" data-theme-toggler>Changer de mode</button>
+      <div class="container nav-content">
+        <a href="#" class="logo"
+          >Alex Marescaux<span style="color: var(--primary)">.</span></a
+        >
+        <button class="nav-toggle" aria-label="Open navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+          <a class="n" href="#about">Compétences</a>
+          <a class="n" href="#projects">Réalisations</a>
+          <a class="n" href="#parcours">Parcours</a>
+          <a class="n" href="#contact">Contact</a>
+          <a
+            class="n"
+            href="doc/CV_Alex_Marescaux.pdf"
+            download="doc/CV_Alex_Marescaux.pdf"
+            >CV</a
+          >
+          <a class="n" href="minia.html"><strong>Mon entreprise</strong> </a>
         </div>
+        <button class="darkmode" data-theme-toggler>Changer de mode</button>
+      </div>
     </nav>
 
-
     <section class="hero">
-        <div class="container hero-grid">
-            <div class="hero-text">
-                <span class="hero-badge">Stage en developpement prévu le 6 avril</span>
-                <h1>Développeur Web & Applicatif</h1>
-                <p style="font-size: 1.2rem; max-width: 500px;">
-                    Étudiant en 2e année de BUT Informatique. Je combine rigueur technique et esprit entrepreneurial
-                    pour créer des solutions efficaces.
-                </p>
-                <a href="#contact" class="btn-primary">Me contacter</a>
-                <a href="#projects" style="margin-left: 20px; color: var(--text-main); font-weight: 600;">Voir mon
-                    travail ↓</a>
-            </div>
-
-
-            <div class="hero-img-placeholder">
-                <img src="img/ppp.png" alt="">
-            </div>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="hero-badge"
+            >Stage en developpement prévu le 6 avril</span
+          >
+          <h1>Développeur Web & Applicatif</h1>
+          <p style="font-size: 1.2rem; max-width: 500px">
+            Étudiant en 2e année de BUT Informatique. Je combine rigueur
+            technique et esprit entrepreneurial pour créer des solutions
+            efficaces.
+          </p>
+          <a href="#contact" class="btn-primary">Me contacter</a>
+          <a
+            href="#projects"
+            style="margin-left: 20px; color: var(--text-main); font-weight: 600"
+            >Voir mon travail ↓</a
+          >
         </div>
+
+        <div class="hero-img-placeholder">
+          <img src="img/ppp.png" alt="" />
+        </div>
+      </div>
     </section>
 
     <!-- COMPETENCES -->
     <section id="about">
-        <div class="container">
-            <h2>Compétences & Outils</h2>
-            <div class="skills-grid">
-                <div class="skill-item">Java</div>
-                <div class="skill-item">Python</div>
-                <div class="skill-item">HTML5 / CSS</div>
-                <div class="skill-item">SQL</div>
-                <div class="skill-item">C</div>
-                <div class="skill-item">Git / GitHub</div>
-                <div class="skill-item">Méthode Agile</div>
-                <div class="skill-item">VS Code</div>
-                <div class="skill-item">InteliJ</div>
-                <div class="skill-item">Photoshop</div>
-
-            </div>
-
-
-            <div class="divider"></div>
-            <h2>En cours d'apprentissage...</h2>
-            <div class="skills-grid">
-                <div class="en-cours">JavaScript
-                </div>
-                <div class="en-cours">NodeJs
-                </div>
-                <div class="en-cours">React
-                </div>
-                <div class="en-cours">Dev Mobile ( Android )
-                </div>
-                <div style="opacity: 0.30;" class="en-cours">A suivre...
-                </div>
-
-            </div>
-
-
-            <div
-                style="margin-top: 50px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-                <div class="card" style="padding: 20px; background: #f0f5fd; border: none;">
-                    <h3 style="color: var(--primary);">Qualités Humaines</h3>
-                    <ul style="margin-top: 10px; color: var(--text-muted);">
-                        <li>✓ Sérieux & Rigoureux</li>
-                        <li>✓ Curieux & Autodidacte</li>
-                        <li>✓ Esprit d'équipe</li>
-                        <li>✓ Ambitieux</li>
-                    </ul>
-                </div>
-                <div class="card" style="padding: 20px; background: #eff6ff; border: none;">
-                    <h3 style="color: var(--primary);">Langues & Mobilité</h3>
-                    <ul style="margin-top: 10px; color: var(--text-muted);">
-                        <li>✓ Anglais (Niveau B1)</li>
-                        <li>✓ Permis B</li>
-                        <li>✓ Velo / Trotinette</li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container">
+        <h2>Compétences & Outils</h2>
+        <div class="skills-grid">
+          <div class="skill-item">Java</div>
+          <div class="skill-item">Python</div>
+          <div class="skill-item">HTML5 / CSS</div>
+          <div class="skill-item">SQL</div>
+          <div class="skill-item">C</div>
+          <div class="skill-item">Git / GitHub</div>
+          <div class="skill-item">Méthode Agile</div>
+          <div class="skill-item">VS Code</div>
+          <div class="skill-item">InteliJ</div>
+          <div class="skill-item">Photoshop</div>
         </div>
+
+        <div class="divider"></div>
+        <h2>En cours d'apprentissage...</h2>
+        <div class="skills-grid">
+          <div class="en-cours">JavaScript</div>
+          <div class="en-cours">NodeJs</div>
+          <div class="en-cours">React</div>
+          <div class="en-cours">Dev Mobile ( Android )</div>
+          <div style="opacity: 0.3" class="en-cours">A suivre...</div>
+        </div>
+
+        <div
+          style="
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+          "
+        >
+          <div
+            class="card"
+            style="padding: 20px; background: #f0f5fd; border: none"
+          >
+            <h3 style="color: var(--primary)">Qualités Humaines</h3>
+            <ul style="margin-top: 10px; color: var(--text-muted)">
+              <li>✓ Sérieux & Rigoureux</li>
+              <li>✓ Curieux & Autodidacte</li>
+              <li>✓ Esprit d'équipe</li>
+              <li>✓ Ambitieux</li>
+            </ul>
+          </div>
+          <div
+            class="card"
+            style="padding: 20px; background: #eff6ff; border: none"
+          >
+            <h3 style="color: var(--primary)">Langues & Mobilité</h3>
+            <ul style="margin-top: 10px; color: var(--text-muted)">
+              <li>✓ Anglais (Niveau B1)</li>
+              <li>✓ Permis B</li>
+              <li>✓ Velo / Trotinette</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- PROJETS -->
-    <section id="projects" style="background: var(--bg-white);">
-        <div class="container">
-            <h2>Projets Informatiques</h2>
-            
-            <p style="margin-bottom: 40px;">Une sélection de projets réalisés dans le cadre académique et personnel.</p>
-            <div class="filter-buttons">
-                <button class="btn-tri"  data-filter="Tout">Tout type de projet</button>
-                <button class="btn-tri" data-filter="Java">Java</button>
-                <button class="btn-tri"  data-filter="Html">Web</button>
-                <button class="btn-tri" data-filter="Architecture MVC">MVC</button>
-                <button class="btn-tri" data-filter="Reseaux">Reseaux</button>
+    <section id="projects" style="background: var(--bg-white)">
+      <div class="container">
+        <h2>Projets Informatiques</h2>
 
-            </div>
-            <div class="project-grid">
-                 
-                
-            </div>
-                <div style="text-align: center; margin-top: 30px; border-radius: 10px; cursor: pointer;">
-                    <a href="projects.html" class="btn-primary" style="padding: 12px 30px; font-size: 1rem;">Voir
-                        plus de projets...</a>
-                </div>
+        <p style="margin-bottom: 40px">
+          Une sélection de projets réalisés dans le cadre académique et
+          personnel.
+        </p>
+        <div class="filter-buttons">
+          <button class="btn-tri" data-filter="Tout">
+            Tout type de projet
+          </button>
+          <button class="btn-tri" data-filter="Java">Java</button>
+          <button class="btn-tri" data-filter="Html">Web</button>
+          <button class="btn-tri" data-filter="Architecture MVC">MVC</button>
+          <button class="btn-tri" data-filter="Reseaux">Reseaux</button>
         </div>
+        <div class="container-search-form">
+          <form class="search-form" action="get">
+            <input
+              class="search-input"
+              type="text"
+              placeholder="Rechercher..."
+            />
+          </form>
+        </div>
+
+        <div class="project-grid"></div>
+        <div
+          style="
+            text-align: center;
+            margin-top: 30px;
+            border-radius: 10px;
+            cursor: pointer;
+          "
+        >
+          <a
+            href="projects.html"
+            class="btn-primary"
+            style="padding: 12px 30px; font-size: 1rem"
+            >Voir plus de projets...</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- PARCOURS -->
     <section id="parcours">
-        <div class="container">
-            <div class="timeline-section">
-                <!-- Education -->
-                <div class="timeline-group">
-                    <h3>Formation</h3>
-                    <div class="timeline-item">
-                        <span class="date">Sept 2024 - Présent</span>
-                        <h4>BUT Informatique</h4>
-                        <p>IUT de Lille (Villeneuve d'Ascq)</p>
-                        <p style="font-size: 0.9rem;">Actuellement en 2e année.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="date">2024</span>
-                        <h4>Baccalauréat Général</h4>
-                        <p>Lycée Saint Dominique, Béthune</p>
-                        <p style="font-size: 0.9rem;">Obtenu avec Mention Bien.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="date">Certifications</span>
-                        <h4>BAFA Complet</h4>
-                        <p>Animation et encadrement de groupes.</p>
-                    </div>
-                </div>
-
-                <!-- Experience -->
-                <div class="timeline-group">
-                    <h3>Expérience Pro & Bénévole</h3>
-                    <div class="timeline-item" style="opacity: 30%;">
-                        <span class="date">Avril 2026 - Juin 2026 (à venir)</span>
-                        <h4>Dev chez Tabuleo (Stage)</h4>
-                        <p>Developpeur Stagiaire chez Tabuleo</p>
-                        <p style="font-size: 0.9rem;">JS, HTML, CSS, React, NodeJs...</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="date">Fév 2025 - Présent</span>
-                        <h4>Micro-entrepreneur</h4>
-                        <p>Graphisme pour créateurs de contenus.</p>
-                        <p style="font-size: 0.9rem;">Gestion client, facturation, création visuelle.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="date">Étés 2024 - 2025</span>
-                        <h4>Animateur</h4>
-                        <p>Encadrement de jeunes, organisation d'activités.</p>
-                    </div>
-                    <div class="timeline-item">
-                        <span class="date">Bénévolat</span>
-                        <h4>Emmaüs & Aide à la personne</h4>
-                        <p>Jardinage, entretien, logistique.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="timeline-section">
+          <!-- Education -->
+          <div class="timeline-group">
+            <h3>Formation</h3>
+            <div class="timeline-item">
+              <span class="date">Sept 2024 - Présent</span>
+              <h4>BUT Informatique</h4>
+              <p>IUT de Lille (Villeneuve d'Ascq)</p>
+              <p style="font-size: 0.9rem">Actuellement en 2e année.</p>
             </div>
+            <div class="timeline-item">
+              <span class="date">2024</span>
+              <h4>Baccalauréat Général</h4>
+              <p>Lycée Saint Dominique, Béthune</p>
+              <p style="font-size: 0.9rem">Obtenu avec Mention Bien.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="date">Certifications</span>
+              <h4>BAFA Complet</h4>
+              <p>Animation et encadrement de groupes.</p>
+            </div>
+          </div>
+
+          <!-- Experience -->
+          <div class="timeline-group">
+            <h3>Expérience Pro & Bénévole</h3>
+            <div class="timeline-item" style="opacity: 30%">
+              <span class="date">Avril 2026 - Juin 2026 (à venir)</span>
+              <h4>Dev chez Tabuleo (Stage)</h4>
+              <p>Developpeur Stagiaire chez Tabuleo</p>
+              <p style="font-size: 0.9rem">JS, HTML, CSS, React, NodeJs...</p>
+            </div>
+            <div class="timeline-item">
+              <span class="date">Fév 2025 - Présent</span>
+              <h4>Micro-entrepreneur</h4>
+              <p>Graphisme pour créateurs de contenus.</p>
+              <p style="font-size: 0.9rem">
+                Gestion client, facturation, création visuelle.
+              </p>
+            </div>
+            <div class="timeline-item">
+              <span class="date">Étés 2024 - 2025</span>
+              <h4>Animateur</h4>
+              <p>Encadrement de jeunes, organisation d'activités.</p>
+            </div>
+            <div class="timeline-item">
+              <span class="date">Bénévolat</span>
+              <h4>Emmaüs & Aide à la personne</h4>
+              <p>Jardinage, entretien, logistique.</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" style="padding-bottom: 50px;">
-        <div class="container">
-            <div class="contact-box">
-                <h2>Prêt à collaborer ?</h2>
-                <p style="margin-bottom: 30px;">
-                    Je serais <strong>stagiaire</strong> à partir du <strong>6 avril
-                        2026 en developpement</strong>,<br>
+    <section id="contact" style="padding-bottom: 50px">
+      <div class="container">
+        <div class="contact-box">
+          <h2>Prêt à collaborer ?</h2>
+          <p style="margin-bottom: 30px">
+            Je serais <strong>stagiaire</strong> à partir du
+            <strong>6 avril 2026 en developpement</strong>,<br />
+          </p>
+          <a
+            href="mailto:alex.marescaux62@gmail.com"
+            class="btn-primary mail"
+            style="font-size: 1.1rem; padding: 15px 40px"
+          >
+            alex.marescaux62@gmail.com
+          </a>
+          <div
+            style="
+              margin-top: 30px;
+              display: flex;
+              justify-content: center;
+              gap: 20px;
+              color: var(--text-muted);
+            "
+          >
+            <span>📍 Givenchy les la bassée</span>
+            <span>📞 06 81 51 99 28</span>
+          </div>
 
-                </p>
-                <a href="mailto:alex.marescaux62@gmail.com" class="btn-primary mail"
-                    style="font-size: 1.1rem; padding: 15px 40px;">
-                    alex.marescaux62@gmail.com
-                </a>
-                <div
-                    style="margin-top: 30px; display: flex; justify-content: center; gap: 20px; color: var(--text-muted);">
-                    <span>📍 Givenchy les la bassée</span>
-                    <span>📞 06 81 51 99 28</span>
-                </div>
-
-                <div class="reseaux">
-                    <a href="https://github.com/AlexMrsx"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/alex-marescaux-1a6594226/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://x.com/alexmrsx_?s=21"><i class="fab fa-x"></i></a>
-                </div>
-
-
-            </div>
+          <div class="reseaux">
+            <a href="https://github.com/AlexMrsx"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/alex-marescaux-1a6594226/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="https://x.com/alexmrsx_?s=21"><i class="fab fa-x"></i></a>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer
-        style="background: var(--bg-white); padding: 30px 0; text-align: center; border-top: 1px solid var(--border);">
-        <p style="font-size: 0.9rem;">© 2025 Alex Marescaux - Développeur Stagiaire</p>
+      style="
+        background: var(--bg-white);
+        padding: 30px 0;
+        text-align: center;
+        border-top: 1px solid var(--border);
+      "
+    >
+      <p style="font-size: 0.9rem">
+        © 2025 Alex Marescaux - Développeur Stagiaire
+      </p>
     </footer>
 
     <script>
-        function updateButtonText() {
-            const btn = document.querySelector('.mail');
-            if (window.innerWidth <= 768) {
-                btn.textContent = 'Me contacter'; // version courte pour mobile
-            } else {
-                btn.textContent = 'alex.marescaux62@gmail.com'; // version longue pour desktop
-            }
+      function updateButtonText() {
+        const btn = document.querySelector(".mail");
+        if (window.innerWidth <= 768) {
+          btn.textContent = "Me contacter"; // version courte pour mobile
+        } else {
+          btn.textContent = "alex.marescaux62@gmail.com"; // version longue pour desktop
         }
+      }
 
-        window.addEventListener('resize', updateButtonText);
-        window.addEventListener('load', updateButtonText);
+      window.addEventListener("resize", updateButtonText);
+      window.addEventListener("load", updateButtonText);
 
-
-        // Animation simple à l'apparition
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
+      // Animation simple à l'apparition
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = "translateY(0)";
+          }
         });
+      });
 
-        document.querySelectorAll('nav').forEach((nav) => {
-            nav.style.opacity = 0;
-            nav.style.transform = 'translateX(30px)';
-            nav.style.transition = 'all 2s ease-out';
-            observer.observe(nav);
-        });
+      document.querySelectorAll("nav").forEach((nav) => {
+        nav.style.opacity = 0;
+        nav.style.transform = "translateX(30px)";
+        nav.style.transition = "all 2s ease-out";
+        observer.observe(nav);
+      });
 
-        document.querySelectorAll('section').forEach((section) => {
-            section.style.opacity = 0;
-            section.style.transform = 'translateY(20px)';
-            section.style.transition = 'all 0.8s ease-out';
-            observer.observe(section);
-        });
+      document.querySelectorAll("section").forEach((section) => {
+        section.style.opacity = 0;
+        section.style.transform = "translateY(20px)";
+        section.style.transition = "all 0.8s ease-out";
+        observer.observe(section);
+      });
 
-        const navToggle = document.querySelector('.nav-toggle');
-        const navLinks = document.querySelector('.nav-links');
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
 
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
     </script>
-</body>
-
+  </body>
 </html>

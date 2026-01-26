@@ -423,8 +423,10 @@
 
 .filter-buttons {
     display: flex;
+    flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 .filter-buttons .btn-tri {
@@ -437,6 +439,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: 0.2s;
+    width: 50%;
 }
 
 .filter-buttons .btn-tri:hover {
@@ -485,4 +488,16 @@
         font-size: 0.85rem;
     }
     
+}
+.container-search-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-input {
+    height: 25px;
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: center;
 }
