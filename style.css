@@ -476,4 +476,5 @@
     background-color: var(--primary);
     color: white;
     height: 30px;
+    font-size: large;
 }
