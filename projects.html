@@ -28,15 +28,24 @@
                 Une sélection de projets réalisés dans le cadre académique et
                 personnel.
             </p>
-            <div class="filter-buttons">
-                <button class="btn-tri" data-filter="Tout">
-                    Tout type de projet
-                </button>
-                <button class="btn-tri" data-filter="Java">Java</button>
-                <button class="btn-tri" data-filter="Html">Web</button>
-                <button class="btn-tri" data-filter="Architecture MVC">MVC</button>
-                <button class="btn-tri" data-filter="Reseaux">Reseaux</button>
-            </div>
+                    <div class="filter-buttons">
+            <select class="select-tri" name="tri" id="tri">
+                <option value="Java">Tout les projets</option>
+                <option value="Java">Java</option>
+                <option value="Html">Web</option>
+                <option value="Architecture MVC">MVC</option>
+                <option value="Reseaux">Reseaux</option>
+            </select>
+        </div>
+        <div class="container-search-form">
+          <form class="search-form" action="get">
+            <input
+              class="search-input"
+              type="text"
+              placeholder="Rechercher..."
+            />
+          </form>
+        </div>
             <div class="project-grid"></div>
         </div>
     </section>
