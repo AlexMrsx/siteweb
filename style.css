@@ -424,38 +424,11 @@
 .filter-buttons {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
     align-items: center;
+    margin-bottom: 10px;
+
 }
 
-.filter-buttons .btn-tri {
-    padding: 8px 20px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #222;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.2s;
-    width: 50%;
-}
-
-.filter-buttons .btn-tri:hover {
-    background-color: #ddd;
-}
-
-.filter-buttons .btn-tri:active {
-    background-color: #ccc;
-}
-
-/* AJOUTEZ cette règle plus spécifique */
-.filter-buttons .btn-tri.actif {
-    background-color: var(--primary); /* ou red si vous voulez */
-    color: white;
-    border-color: var(--primary);
-}
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
@@ -481,13 +454,7 @@
         align-items: center;
     }
 
-    .filter-buttons .btn-tri {
-        width: 100%;
-        max-width: 250px;
-        padding: 10px 0;
-        font-size: 0.85rem;
-    }
-    
+
 }
 .container-search-form {
     display: flex;
@@ -496,8 +463,17 @@
 }
 
 .search-input {
-    height: 25px;
+    height: 30px;
     margin-bottom: 20px;
     width: 300px;
     text-align: center;
+}
+
+.select-tri {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: var(--primary);
+    color: white;
+    height: 30px;
 }

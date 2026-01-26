@@ -9,23 +9,19 @@ export async function initProjets() {
   return projets;
 }
 
-const filterButtons = document.querySelectorAll(".btn-tri");
-filterButtons[0].classList.add("actif");
 //Fonctions
 export function actionTriButton(max) {
-  filterButtons.forEach((bouton) => {
-    bouton.addEventListener("click", function () {
-      reinitBoutonActif();
-      const filtre = this.dataset.filter;
-      this.classList.add("actif");
-      if (filtre === "Tout") {
+    const selectTri = document.querySelector(".select-tri");
+    selectTri.addEventListener("change", function(){
+        console.log(selectTri.value);
+        const filtre = selectTri.value;
+        if (filtre === "Tout") {
         createEveryProjects(projets.slice(0, max));
       } else {
         const projetfiltrer = projets.filter((p) => p.tag.includes(filtre));
         createEveryProjects(projetfiltrer);
       }
-    });
-  });
+    })
 }
 
 export function reinitBoutonActif() {
