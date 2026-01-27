@@ -11,17 +11,17 @@ export async function initProjets() {
 
 //Fonctions
 export function actionTriButton(max) {
-    const selectTri = document.querySelector(".select-tri");
-    selectTri.addEventListener("change", function(){
-        console.log(selectTri.value);
-        const filtre = selectTri.value;
-        if (filtre === "Tout") {
-        createEveryProjects(projets.slice(0, max));
-      } else {
-        const projetfiltrer = projets.filter((p) => p.tag.includes(filtre));
-        createEveryProjects(projetfiltrer);
-      }
-    })
+  const selectTri = document.querySelector(".select-tri");
+  selectTri.addEventListener("change", function () {
+    console.log(selectTri.value);
+    const filtre = selectTri.value;
+    if (filtre === "Tout") {
+      createEveryProjects(projets.slice(0, max));
+    } else {
+      const projetfiltrer = projets.filter((p) => p.tag.includes(filtre));
+      createEveryProjects(projetfiltrer);
+    }
+  });
 }
 
 export function reinitBoutonActif() {
@@ -74,3 +74,25 @@ inputSearch.addEventListener("input", function () {
 
   createEveryProjects(projetfiltrer);
 });
+
+//Changement de role
+const roles = ["Alex", "développeur", "entrepreneur"];
+let index = 0;
+const el = document.getElementById("role");
+
+setInterval(() => {
+  el.classList.add("out");
+
+  setTimeout(() => {
+    index = (index + 1) % roles.length;
+    el.textContent = roles[index];
+
+    el.classList.remove("out");
+    el.classList.add("in");
+
+    requestAnimationFrame(() => {
+      el.classList.remove("in");
+    });
+  }, 500);
+
+}, 2000);
