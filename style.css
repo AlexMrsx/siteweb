@@ -1,8 +1,21 @@
         /* --- VARIABLES & RESET --- */
+        
         :root { 
             --primary: #006aeb; /* Vert émeraude professionnel */
             --primary-dark: #0a5cc1;
             --textform: #006aeb;
+            --bg-body: #f9fafb; /* Gris très très clair */
+            --bg-white: #ffffff;
+            --text-main: #111827; /* Noir adouci */
+            --text-muted: #4b5563; /* Gris moyen */
+            --border: #e5e7eb;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        :root.green { 
+            --primary: #1a7431; /* Vert émeraude professionnel */
+            --primary-dark: #155d27;
+            --textform: #1a7431;
             --bg-body: #f9fafb; /* Gris très très clair */
             --bg-white: #ffffff;
             --text-main: #111827; /* Noir adouci */
@@ -489,6 +502,7 @@
     height: 30px;
     font-size: large;
 }
+
 
 
 .container-alex {

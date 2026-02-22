@@ -21,6 +21,8 @@ document.querySelector(".darkmode").addEventListener("click", () => {
 });
 
 
+
+
 function whileblackcolor()  {
     document.querySelectorAll("img").forEach((img) => {
         img.style.filter = "grayscale(1)";
