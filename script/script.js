@@ -1,9 +1,10 @@
 // Variables
 let projets = [];
 
+
 // Fonction pour charger les projets
-export async function initProjets() {
-  const reponse = await fetch("./ressources/projet.json");
+export async function initProjets(cheminProjet) {
+  const reponse = await fetch(cheminProjet);
   projets = await reponse.json();
   console.log(projets);
   return projets;
@@ -77,24 +78,3 @@ inputSearch.addEventListener("input", function () {
   createEveryProjects(projetfiltrer);
 });
 
-//Changement de role
-const roles = ["Alex", "développeur", "entrepreneur"];
-let index = 0;
-const el = document.getElementById("role");
-
-setInterval(() => {
-  el.classList.add("out");
-
-  setTimeout(() => {
-    index = (index + 1) % roles.length;
-    el.textContent = roles[index];
-
-    el.classList.remove("out");
-    el.classList.add("in");
-
-    requestAnimationFrame(() => {
-      el.classList.remove("in");
-    });
-  }, 500);
-
-}, 2000);

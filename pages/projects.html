@@ -1,41 +1,40 @@
 <!doctype html>
 <html lang="fr">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projets | Alex Marescaux</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="project.css" />
-    <script type="module" src="script/script.js" defer></script>
-    <script type="module" src="script/projet.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/project.css" />
+    <script type="module" src="../script/projet.js" defer></script>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="site.html">← Retour au CV Développeur</a>
-            <span class="navbar-text"> Projets & Réalisations </span>
-        </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../site.html"
+          >← Retour au CV Développeur</a
+        >
+        <span class="navbar-text"> Projets & Réalisations </span>
+      </div>
     </nav>
 
     <!-- PROJETS -->
     <section id="projects" style="background: var(--bg-white)">
-        <div class="container">
-            <h2>Projets Informatiques</h2>
-            <p style="margin-bottom: 40px">
-                Une sélection de projets réalisés dans le cadre académique et
-                personnel.
-            </p>
-                    <div class="filter-buttons">
-            <select class="select-tri" name="tri" id="tri">
-                <option value="Java">Tout les projets</option>
-                <option value="Java">Java</option>
-                <option value="Html">Web</option>
-                <option value="Architecture MVC">MVC</option>
-                <option value="Reseaux">Reseaux</option>
-            </select>
+      <div class="container">
+        <h2>Projets Informatiques</h2>
+        <p style="margin-bottom: 40px">
+          Une sélection de projets réalisés dans le cadre académique et
+          personnel.
+        </p>
+        <div class="filter-buttons">
+          <select class="select-tri" name="tri" id="tri">
+            <option value="Java">Tout les projets</option>
+            <option value="Java">Java</option>
+            <option value="Html">Web</option>
+            <option value="Architecture MVC">MVC</option>
+            <option value="Reseaux">Reseaux</option>
+          </select>
         </div>
         <div class="container-search-form">
           <form class="search-form" action="get">
@@ -46,9 +45,23 @@
             />
           </form>
         </div>
-            <div class="project-grid"></div>
-        </div>
+        <div class="project-grid"></div>
+      </div>
     </section>
-</body>
 
+    <div class="project-full hide">
+        <img class="projectImg" src="../ressources/img/capitalum.png" alt="Image du projet ${titre}" />
+        <div>
+          <h3>Titre du projet</h3>
+          <p>Description</p>
+        </div>
+        <div class="tags">tag</div>
+        <div class="link-project">
+            <a href="#">Voir le projet</a>
+
+        </div>
+    </div>
+
+    <div class="fullblack hide"></div>
+</body>
 </html>

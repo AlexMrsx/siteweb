@@ -37,7 +37,7 @@
             download="doc/CV_Alex_Marescaux.pdf"
             >CV</a
           >
-          <a class="n" href="minia.html"><strong>Mon entreprise</strong> </a>
+          <a class="n" href="pages/minia.htmls"><strong>Mon entreprise</strong> </a>
         </div>
       </div>
     </nav>
@@ -174,7 +174,7 @@
           "
         >
           <a
-            href="projects.html"
+            href="pages/projects.html"
             class="btn-primary"
             style="padding: 12px 30px; font-size: 1rem"
             >Voir plus de projets...</a
@@ -339,6 +339,27 @@
       navToggle.addEventListener("click", () => {
         navLinks.classList.toggle("active");
       });
+
+      //Changement de role
+      const roles = ["Alex", "développeur", "entrepreneur"];
+      let index = 0;
+      const el = document.getElementById("role");
+
+      setInterval(() => {
+        el.classList.add("out");
+
+        setTimeout(() => {
+          index = (index + 1) % roles.length;
+          el.textContent = roles[index];
+
+          el.classList.remove("out");
+          el.classList.add("in");
+
+          requestAnimationFrame(() => {
+            el.classList.remove("in");
+          });
+        }, 500);
+      }, 2000);
     </script>
   </body>
 </html>
