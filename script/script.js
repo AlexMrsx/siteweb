@@ -38,12 +38,13 @@ export function createEveryProjects(data) {
   document.querySelector(".project-grid").innerHTML = html;
 }
 
-export function createProject({ titre, desc, tag, lien }) {
+export function createProject({ image, titre, desc, tag, github, site }) {
   let tagHTML = "";
   tag.forEach((element) => (tagHTML += `<span class="tag">${element}</span>`));
 
   const html = `
         <article class="card">
+                  <img class="projectImg" src="${image}" alt="Image du projet ${titre}" />
                     <div>
                         <h3>${titre}</h3>
                         <p>${desc}</p>
@@ -52,7 +53,8 @@ export function createProject({ titre, desc, tag, lien }) {
                         ${tagHTML}
                     </div>
                     <div class="link-project">
-                        <a target="_blank" href="${lien}">Lien GitHub</a>
+                        ${github ? `<a target="_blank" href="${github}">Voir le code</a>` : ""}
+                        ${site ? `<a target="_blank" href="${site}">Voir le projet</a>` : ""}
                     </div>
         </article>
     

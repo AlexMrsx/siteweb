@@ -1,52 +1,58 @@
 [
     {
+        "image": "../ressources/img/capitalum.png",
         "titre" : "Capitalum ( Projet Perso )",
         "desc" : "Site Web de calcul d'intêret composés pour vos investissements !",
         "tag" : [
             "Html", "CSS", "JavaScript", "Bootstrap", "Charts.Js"
         ], 
-        "lien" : "https://alexmrsx.github.io/Capitalum/"
+        "github" : "",
+        "site" : "https://alexmrsx.github.io/Capitalum/"
     },
     {
+        "image": "../ressources/img/projetuniv.jpeg",
         "titre" : "Plateforme Universitaire",
         "desc" : "Application desktop Java/JavaFX permettant l'échange de ressources entre étudiants.",
         "tag" : [
             "Java", "JavaFX", "Architecture MVC"
         ], 
-        "lien" : "https://github.com/AlexMrsx/SejourLinguistique",
-        "img" : "../img/projetuniv.jpeg"
+        "github" : "https://github.com/AlexMrsx/SejourLinguistique"
     },
     {
+        "image": "../ressources/img/labyrinthe.jpg",
         "titre" : "Jeu de labyrinthe",
         "desc" : "Développement d'un mini logiciel type 'Paint' pour apprendre le MVC",
         "tag" : [
             "Java", "JavaFX", "Architecture MVC"
         ], 
-        "lien" : "https://github.com/AlexMrsx/Labyrinthe"
+        "github" : "https://github.com/AlexMrsx/Labyrinthe"
     },
     {
+        "image": "../ressources/img/pixelart.png",
         "titre" : "Mini Paint",
         "desc" : "Jeu de réalisation de labyrtinthe avec Interface Graphique. Algo de génération de labyrtinhe parfait & aléatoire",
         "tag" : [
             "Java", "JavaFX", "Architecture MVC"
         ], 
-        "lien" : "https://github.com/AlexMrsx/Paint_MVC"
+        "github" : "https://github.com/AlexMrsx/Paint_MVC"
     },
     {
+        "image": "../ressources/img/monopoly.png",
         "titre" : "Jeu Monopoly",
         "desc" : "Reproduction du jeu de société en équipe, gestion de projet via la méthode Agile.",
         "tag" : [
             "Java", "Scrum/Agile", "Travail d'équipe"
         ], 
-        "lien" : "https://github.com/AlexMrsx/Infopoly"
+        "github" : "https://github.com/AlexMrsx/Infopoly"
     },
     {
+        "image": "../ressources/img/azertype.png",
         "titre" : "Azertype",
         "desc" : "Une mini app web créer durant mon apprentissage du JavaScript sur OpenClassRoom",
         "tag" : [
             "JavaScript", "Html", "CSS"
         ], 
-        "lien" : "https://github.com/AlexMrsx/AzerType"
+        "github" : "https://github.com/AlexMrsx/AzerType"
     },
     {
         "titre" : "Jeu Ludo-pédagogique",
@@ -62,7 +68,7 @@
         "tag" : [
             "Linux Adminiastration", "Virtualisation", "Nginx Reverse Proxy", "PostgreSQL", "Systemd Services", "Reseaux"
         ], 
-        "lien" : "https://gitlab.univ-lille.fr/etu/2025-2026/s303/h-calesse-marescaux-deflou"
+        "github" : "https://gitlab.univ-lille.fr/etu/2025-2026/s303/h-calesse-marescaux-deflou"
     },
     {
         "titre" : "Ce site Web Portfolio",
@@ -70,10 +76,6 @@
         "tag" : [
            "CSS","Html", "Json", "JavaScript"
         ], 
-        "lien" : "https://github.com/AlexMrsx/siteweb"
+        "github" : "https://github.com/AlexMrsx/siteweb"
     }
-
-
-
-
 ]        
